@@ -92,7 +92,9 @@ The following feature subset representing mean and standard deviation measuremen
 30. tBodyGyroJerk-std()-X: average of the standard deviation of body angular velocity (with Jerk) along X axis (radians/second)
 31. tBodyGyroJerk-std()-Y: average of the standard deviation of body angular velocity (with Jerk) along Y axis (radians/second)
 32. tBodyGyroJerk-std()-Z: average of the standard deviation of body angular velocity (with Jerk) along Z axis (radians/second)
+
 33.tBodyAccMag-mean(): average magnitude of the mean of Euclidean norm of the body acceleration
+
 34.tBodyAccMag-std(): average magnitude of the standard deviation of Euclidean norm of the body acceleration
 35.tGravityAccMag-mean(): average magnitude of the mean of Euclidean norm of the gravitational acceleration
 36.tGravityAccMag-std(): average magnitude of the standard deviation of Euclidean norm of the gravitational acceleration
