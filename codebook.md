@@ -60,7 +60,7 @@ The complete list of variables of each feature vector is available in **features
 
 The following feature subset representing mean and standard deviation measurements for each activity and subject was used:
 
-  |FEATURE | DESCRIPTION | UNIT
+ No. |FEATURE | DESCRIPTION | UNIT
 --|--------|-------------|------
 1 | activity | six distinct activity labels | WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 2 | subject | subject identifier | integer between 1 and 30
