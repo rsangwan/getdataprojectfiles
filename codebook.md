@@ -60,79 +60,72 @@ The complete list of variables of each feature vector is available in **features
 
 The following feature subset representing mean and standard deviation measurements for each activity and subject was used:
 
-1. activity: six distinct activity labels (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
-2. subject: subject identifier (integer between 1 and 30)
-3. tBodyAcc-mean()-X: average of the mean body acceleration along X axis (g-force)
-4. tBodyAcc-mean()-Y: average of the mean body acceleration along Y axis (g-force)
-5. tBodyAcc-mean()-Z: average of the mean body acceleration along Z axis (g-force)
-6. tBodyAcc-std()-X: average of the standard deviation of body acceleration along X axis (g-force)
-7. tBodyAcc-std()-Y: average of the standard deviation of body acceleration along Y axis (g-force)
-8. tBodyAcc-std()-Z: average of the standard deviation of body acceleration along Z axis (g-force)
-9. tGravityAcc-mean()-X: average of the mean gravitational acceleration along X axis (g-force)
-10. tGravityAcc-mean()-Y: average of the mean gravitational acceleration along Y axis (g-force)
-
-11. tGravityAcc-mean()-Z: average of the mean gravitational acceleration along Z axis (g-force)
-12. tGravityAcc-std()-X: average of the standard deviation of gravitational acceleration along X axis (g-force)
-13. tGravityAcc-std()-Y: average of the standard deviation of gravitational acceleration along Y axis (g-force)
-14. tGravityAcc-std()-Z: average of the standard deviation of gravitational acceleration along Z axis (g-force)
-15. tBodyAccJerk-mean()-X: average of the mean body acceleration (with Jerk) along X axis (g-force)
-16. tBodyAccJerk-mean()-Y: average of the mean body acceleration (with Jerk) along Y axis (g-force)
-17. tBodyAccJerk-mean()-Z: average of the mean body acceleration (with Jerk) along Z axis (g-force)
-18. tBodyAccJerk-std()-X: average of the standard deviation of body acceleration (with Jerk) along X axis (g-force)
-19. tBodyAccJerk-std()-Y: average of the standard deviation of body acceleration (with Jerk) along Y axis (g-force)
-20. tBodyAccJerk-std()-Z: average of the standard deviation of body acceleration (with Jerk) along Z axis (g-force)
-
-21. tBodyGyro-mean()-X: average of the mean body angular velocity along X axis (radians/second)
-22. tBodyGyro-mean()-Y: average of the mean body angular velocity along Y axis (radians/second)
-23. tBodyGyro-mean()-Z: average of the mean body angular velocity along Z axis (radians/second)
-24. tBodyGyro-std()-X: average of the standard deviation of body angular velocity along X axis (radians/second)
-25. tBodyGyro-std()-Y: average of the standard deviation of body angular velocity along Y axis (radians/second)
-26. tBodyGyro-std()-Z: average of the standard deviation of body angular velocity along Z axis (radians/second)
-27. tBodyGyroJerk-mean()-X: average of the mean body angular velocity (with Jerk) along X axis (radians/second)
-28. tBodyGyroJerk-mean()-Y: average of the mean body angular velocity (with Jerk) along Y axis (radians/second)
-29. tBodyGyroJerk-mean()-Z: average of the mean body angular velocity (with Jerk) along Z axis (radians/second)
-30. tBodyGyroJerk-std()-X: average of the standard deviation of body angular velocity (with Jerk) along X axis (radians/second)
-
-31. tBodyGyroJerk-std()-Y: average of the standard deviation of body angular velocity (with Jerk) along Y axis (radians/second)
-32. tBodyGyroJerk-std()-Z: average of the standard deviation of body angular velocity (with Jerk) along Z axis (radians/second)
-33.tBodyAccMag-mean(): average magnitude of the mean of Euclidean norm of the body acceleration
-34.tBodyAccMag-std(): average magnitude of the standard deviation of Euclidean norm of the body acceleration
-35.tGravityAccMag-mean(): average magnitude of the mean of Euclidean norm of the gravitational acceleration
-36.tGravityAccMag-std(): average magnitude of the standard deviation of Euclidean norm of the gravitational acceleration
-37.tBodyAccJerkMag-mean(): average magnitude of the mean of Euclidean norm of the body acceleration
-38.tBodyAccJerkMag-std(): average magnitude of the standard deviation of Euclidean norm of the body acceleration
-39.tBodyGyroMag-mean(): average of the mean of Euclidean norm of body angular velocity
-40.tBodyGyroMag-std(): average of the standard deviation of Euclidean norm of body angular velocity
-
-41.tBodyGyroJerkMag-mean(): average of the mean of Euclidean norm of body angular velocity (with Jerk)
-42.tBodyGyroJerkMag-std(): average of the standard deviation of Euclidean norm of body angular velocity (with Jerk)
-43.fBodyAcc-mean()-X: average of the FFT of the mean body acceleration along X axis
-44.fBodyAcc-mean()-Y: average of the FFT of the mean body acceleration along Y axis
-45. fBodyAcc-mean()-Z: average of the FFT of the mean body acceleration along Z axis
-46. fBodyAcc-std()-X: average of the FFT of the standard deviation of body acceleration along X axis
-47. fBodyAcc-std()-Y: average of the FFT of the standard deviation of body acceleration along Y axis
-48. fBodyAcc-std()-Z: average of the FFT of the standard deviation of body acceleration along Z axis
-49. fBodyAccJerk-mean()-X: average of the FFT of the mean body acceleration (with Jerk) along the X axis
-50. fBodyAccJerk-mean()-Y: average of the FFT of the mean body acceleration (with Jerk) along the Y axis
-
-51. fBodyAccJerk-mean()-Z: average of the FFT of the mean body acceleration (with Jerk) along the Z axis
-52. fBodyAccJerk-std()-X:  average of the FFT of the standard deviation of body acceleration (with Jerk) along the X axis
-53. fBodyAccJerk-std()-Y: average of the FFT of the standard deviation of body acceleration (with Jerk) along the Y axis
-54. fBodyAccJerk-std()-Z: average of the FFT of the standard deviation of body acceleration (with Jerk) along the Z axis
-55. fBodyGyro-mean()-X: average of the FFT of the mean  angular velocity along the X axis
-56. fBodyGyro-mean()-Y: average of the FFT of the mean  angular velocity along the Y axis 
-57. fBodyGyro-mean()-Z: average of the FFT of the mean  angular velocity along the Z axis
-58. fBodyGyro-std()-X: average of the FFT of the standard deviation of angular velocity along the X axis
-59. fBodyGyro-std()-Y: average of the FFT of the standard deviation of angular velocity along the Y axis
-60. fBodyGyro-std()-Z: average of the FFT of the standard deviation of angular velocity along the Z axis
-
-61. fBodyAccMag-mean(): average of the FFT of the mean of Euclidean norm of body angular velocity
-62. fBodyAccMag-std(): average of the FFT of the standard deviation of Euclidean norm of body angular velocity
-63. fBodyBodyAccJerkMag-mean(): average of the FFT of the mean of Euclidean norm of body acceleration(with Jerk)
-64. fBodyBodyAccJerkMag-std(): average of the FFT of the standard deviation of Euclidean norm of body acceleration(with 
-Jerk)
-65. fBodyBodyGyroMag-mean(): average of the mean of Euclidean norm of body angular velocity
-66. fBodyBodyGyroMag-std(): average of the standard deviation of Euclidean norm of body angular velocity
-67. fBodyBodyGyroJerkMag-mean(): average of the mean of Euclidean norm of body angular velocity (with Jerk)
-68. fBodyBodyGyroJerkMag-std(): average of the standard deviation of Euclidean norm of body angular velocity (with Jerk)
+* activity: six distinct activity labels (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+* subject: subject identifier (integer between 1 and 30)
+* tBodyAcc-mean()-X: average of the mean body acceleration along X axis (g-force)
+* tBodyAcc-mean()-Y: average of the mean body acceleration along Y axis (g-force)
+* tBodyAcc-mean()-Z: average of the mean body acceleration along Z axis (g-force)
+* tBodyAcc-std()-X: average of the standard deviation of body acceleration along X axis (g-force)
+* tBodyAcc-std()-Y: average of the standard deviation of body acceleration along Y axis (g-force)
+* tBodyAcc-std()-Z: average of the standard deviation of body acceleration along Z axis (g-force)
+* tGravityAcc-mean()-X: average of the mean gravitational acceleration along X axis (g-force)
+* tGravityAcc-mean()-Y: average of the mean gravitational acceleration along Y axis (g-force)
+* tGravityAcc-mean()-Z: average of the mean gravitational acceleration along Z axis (g-force)
+* tGravityAcc-std()-X: average of the standard deviation of gravitational acceleration along X axis (g-force)
+* tGravityAcc-std()-Y: average of the standard deviation of gravitational acceleration along Y axis (g-force)
+* tGravityAcc-std()-Z: average of the standard deviation of gravitational acceleration along Z axis (g-force)
+* tBodyAccJerk-mean()-X: average of the mean body acceleration (with Jerk) along X axis (g-force)
+* tBodyAccJerk-mean()-Y: average of the mean body acceleration (with Jerk) along Y axis (g-force)
+* tBodyAccJerk-mean()-Z: average of the mean body acceleration (with Jerk) along Z axis (g-force)
+* tBodyAccJerk-std()-X: average of the standard deviation of body acceleration (with Jerk) along X axis (g-force)
+* tBodyAccJerk-std()-Y: average of the standard deviation of body acceleration (with Jerk) along Y axis (g-force)
+* tBodyAccJerk-std()-Z: average of the standard deviation of body acceleration (with Jerk) along Z axis (g-force)
+* tBodyGyro-mean()-X: average of the mean body angular velocity along X axis (radians/second)
+* tBodyGyro-mean()-Y: average of the mean body angular velocity along Y axis (radians/second)
+* tBodyGyro-mean()-Z: average of the mean body angular velocity along Z axis (radians/second)
+* tBodyGyro-std()-X: average of the standard deviation of body angular velocity along X axis (radians/second)
+* tBodyGyro-std()-Y: average of the standard deviation of body angular velocity along Y axis (radians/second)
+* tBodyGyro-std()-Z: average of the standard deviation of body angular velocity along Z axis (radians/second)
+* tBodyGyroJerk-mean()-X: average of the mean body angular velocity (with Jerk) along X axis (radians/second)
+* tBodyGyroJerk-mean()-Y: average of the mean body angular velocity (with Jerk) along Y axis (radians/second)
+* tBodyGyroJerk-mean()-Z: average of the mean body angular velocity (with Jerk) along Z axis (radians/second)
+* tBodyGyroJerk-std()-X: average of the standard deviation of body angular velocity (with Jerk) along X axis (radians/second)
+* tBodyGyroJerk-std()-Y: average of the standard deviation of body angular velocity (with Jerk) along Y axis (radians/second)
+* tBodyGyroJerk-std()-Z: average of the standard deviation of body angular velocity (with Jerk) along Z axis (radians/second)
+* tBodyAccMag-mean(): average magnitude of the mean of Euclidean norm of the body acceleration
+* tBodyAccMag-std(): average magnitude of the standard deviation of Euclidean norm of the body acceleration
+* tGravityAccMag-mean(): average magnitude of the mean of Euclidean norm of the gravitational acceleration
+* tGravityAccMag-std(): average magnitude of the standard deviation of Euclidean norm of the gravitational acceleration
+* tBodyAccJerkMag-mean(): average magnitude of the mean of Euclidean norm of the body acceleration
+* tBodyAccJerkMag-std(): average magnitude of the standard deviation of Euclidean norm of the body acceleration
+* tBodyGyroMag-mean(): average of the mean of Euclidean norm of body angular velocity
+* tBodyGyroMag-std(): average of the standard deviation of Euclidean norm of body angular velocity
+* tBodyGyroJerkMag-mean(): average of the mean of Euclidean norm of body angular velocity (with Jerk)
+* tBodyGyroJerkMag-std(): average of the standard deviation of Euclidean norm of body angular velocity (with Jerk)
+* fBodyAcc-mean()-X: average of the FFT of the mean body acceleration along X axis
+* fBodyAcc-mean()-Y: average of the FFT of the mean body acceleration along Y axis
+* fBodyAcc-mean()-Z: average of the FFT of the mean body acceleration along Z axis
+* fBodyAcc-std()-X: average of the FFT of the standard deviation of body acceleration along X axis
+* fBodyAcc-std()-Y: average of the FFT of the standard deviation of body acceleration along Y axis
+* fBodyAcc-std()-Z: average of the FFT of the standard deviation of body acceleration along Z axis
+* fBodyAccJerk-mean()-X: average of the FFT of the mean body acceleration (with Jerk) along the X axis
+* fBodyAccJerk-mean()-Y: average of the FFT of the mean body acceleration (with Jerk) along the Y axis
+* fBodyAccJerk-mean()-Z: average of the FFT of the mean body acceleration (with Jerk) along the Z axis
+* fBodyAccJerk-std()-X:  average of the FFT of the standard deviation of body acceleration (with Jerk) along the X axis
+* fBodyAccJerk-std()-Y: average of the FFT of the standard deviation of body acceleration (with Jerk) along the Y axis
+* fBodyAccJerk-std()-Z: average of the FFT of the standard deviation of body acceleration (with Jerk) along the Z axis
+* fBodyGyro-mean()-X: average of the FFT of the mean  angular velocity along the X axis
+* fBodyGyro-mean()-Y: average of the FFT of the mean  angular velocity along the Y axis 
+* fBodyGyro-mean()-Z: average of the FFT of the mean  angular velocity along the Z axis
+* fBodyGyro-std()-X: average of the FFT of the standard deviation of angular velocity along the X axis
+* fBodyGyro-std()-Y: average of the FFT of the standard deviation of angular velocity along the Y axis
+* fBodyGyro-std()-Z: average of the FFT of the standard deviation of angular velocity along the Z axis
+* fBodyAccMag-mean(): average of the FFT of the mean of Euclidean norm of body angular velocity
+* fBodyAccMag-std(): average of the FFT of the standard deviation of Euclidean norm of body angular velocity
+* fBodyBodyAccJerkMag-mean(): average of the FFT of the mean of Euclidean norm of body acceleration(with Jerk)
+* fBodyBodyAccJerkMag-std(): average of the FFT of the standard deviation of Euclidean norm of body acceleration(with Jerk)
+* fBodyBodyGyroMag-mean(): average of the mean of Euclidean norm of body angular velocity
+* fBodyBodyGyroMag-std(): average of the standard deviation of Euclidean norm of body angular velocity
+* fBodyBodyGyroJerkMag-mean(): average of the mean of Euclidean norm of body angular velocity (with Jerk)
+* fBodyBodyGyroJerkMag-std(): average of the standard deviation of Euclidean norm of body angular velocity (with Jerk)
 
